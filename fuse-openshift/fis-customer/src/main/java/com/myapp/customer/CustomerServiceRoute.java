@@ -49,9 +49,9 @@ public class CustomerServiceRoute extends RouteBuilder {
             .contextPath(apiContext).apiContextPath("/api-doc")
             .host(apiDocHost)
             .port(apiDocPort)   
-            .apiProperty("api.title", "Order REST API")
-            .apiProperty("api.version", "1.0")
-            .apiProperty("cors", "true")
+            //.apiProperty("api.title", "Order REST API")
+            //.apiProperty("api.version", "1.0")
+            //.apiProperty("cors", "true")
             .apiContextRouteId("doc-api")
             .component("servlet")
             .bindingMode(RestBindingMode.json);
