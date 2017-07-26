@@ -21,6 +21,7 @@ import org.apache.camel.Endpoint;
 import org.apache.camel.builder.RouteBuilder;
 import org.apache.camel.cdi.ContextName;
 import org.apache.camel.cdi.Uri;
+import org.apache.camel.model.rest.RestBindingMode;
 
 /**
  * Configures all our Camel routes, components, endpoints and beans
