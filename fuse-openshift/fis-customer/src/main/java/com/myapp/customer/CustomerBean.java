@@ -27,4 +27,8 @@ public class CustomerBean {
     public String someMethod(String body) {
         return "Saying Hello World " + ++counter + " times";
     }
+
+    public String restResponse(String body) {
+        return "Rest response";
+    }
 }

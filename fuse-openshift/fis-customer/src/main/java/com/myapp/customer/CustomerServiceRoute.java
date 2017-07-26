@@ -43,6 +43,13 @@ public class CustomerServiceRoute extends RouteBuilder {
         from(inputEndpoint)
             .beanRef("customerBean")
             .to(resultEndpoint);
+
+        rest("/orders").description("Orders service")
+
+            .get("/").description("List orders")
+                .route().routeId("orders-list")
+                .beanRef("customerBean", "restResponse")
+                .endRest();
     }
 
 }

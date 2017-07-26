@@ -23,7 +23,7 @@
     <docker.from>jboss-fuse-6/fis-java-openshift:1.0</docker.from>
     <fabric8.dockerUser>fabric8/</fabric8.dockerUser>
     <docker.image>${fabric8.dockerUser}${project.artifactId}:${project.version}</docker.image>
-    <docker.port.container.jolokia>8778</docker.port.container.jolokia>
+    <!--<docker.port.container.jolokia>8778</docker.port.container.jolokia>-->
 
     <fabric8.label.component>${project.artifactId}</fabric8.label.component>
     <fabric8.label.container>java</fabric8.label.container>
@@ -50,6 +50,14 @@
       </dependency>
     </dependencies>
   </dependencyManagement>
+
+  <distributionManagement>
+    <repository>
+      <id>internal.repo</id>
+      <name>MyCo Internal Repository</name>
+      <url>http://nexus-nexus3.192.168.99.100.nip.io/repository/maven-central/</url>
+    </repository>
+  </distributionManagement>
 
   <dependencies>
 
