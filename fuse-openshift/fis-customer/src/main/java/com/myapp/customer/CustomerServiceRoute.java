@@ -44,6 +44,17 @@ public class CustomerServiceRoute extends RouteBuilder {
             .beanRef("customerBean")
             .to(resultEndpoint);
 
+        restConfiguration()
+            .contextPath(apiContext).apiContextPath("/api-doc")
+            .host(apiDocHost)
+            .port(apiDocPort)   
+            .apiProperty("api.title", "Order REST API")
+            .apiProperty("api.version", "1.0")
+            .apiProperty("cors", "true")
+            .apiContextRouteId("doc-api")
+            .component("servlet")
+            .bindingMode(RestBindingMode.json);
+
         rest("/orders").description("Orders service")
 
             .get("/").description("List orders")
