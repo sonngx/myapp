@@ -13,7 +13,7 @@
  *  implied.  See the License for the specific language governing
  *  permissions and limitations under the License.
  */
-package package com.myapp.customer;
+package com.myapp.customer;
 
 import javax.inject.Inject;
 

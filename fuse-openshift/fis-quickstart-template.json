@@ -33,7 +33,7 @@
     },
     {
       "name": "BUILDER_VERSION",
-      "value": "1.0",
+      "value": "latest",
       "description": "Builder version"
     },
     {
@@ -162,6 +162,7 @@
         ],
         "source": {
           "type": "Git",
+          "contextDir": "fuse-openshift/fis-customer",
           "git": {
             "uri": "${GIT_REPO}",
             "ref": "${GIT_REF}"
