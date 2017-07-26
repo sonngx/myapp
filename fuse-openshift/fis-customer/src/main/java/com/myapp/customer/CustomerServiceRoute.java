@@ -45,10 +45,10 @@ public class CustomerServiceRoute extends RouteBuilder {
             .beanRef("customerBean")
             .to(resultEndpoint);
 
-        restConfiguration()
-            .contextPath(apiContext).apiContextPath("/api-doc")
-            .host(apiDocHost)
-            .port(apiDocPort)   
+        /*restConfiguration()
+            .contextPath("rest").apiContextPath("/api-doc")
+            .host("0.0.0.0")
+            .port("8080")   
             //.apiProperty("api.title", "Order REST API")
             //.apiProperty("api.version", "1.0")
             //.apiProperty("cors", "true")
@@ -61,7 +61,7 @@ public class CustomerServiceRoute extends RouteBuilder {
             .get("/").description("List orders")
                 .route().routeId("orders-list")
                 .beanRef("customerBean", "restResponse")
-                .endRest();
+                .endRest();*/
     }
 
 }
