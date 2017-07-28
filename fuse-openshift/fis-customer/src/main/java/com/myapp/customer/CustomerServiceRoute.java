@@ -30,7 +30,7 @@ import org.apache.camel.model.rest.RestBindingMode;
 public class CustomerServiceRoute extends RouteBuilder {
 
     @Inject
-    @Uri("timer:foo?period=5000")
+    @Uri("timer:foo?period=20000")
     private Endpoint inputEndpoint;
 
     @Inject

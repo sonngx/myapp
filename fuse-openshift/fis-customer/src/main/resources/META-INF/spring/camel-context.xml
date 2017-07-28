@@ -1,4 +1,4 @@
-camel-context.xml<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
      Copyright 2005-2015 Red Hat, Inc.
      Red Hat licenses this file to you under the Apache License, version
@@ -36,7 +36,7 @@ camel-context.xml<?xml version="1.0" encoding="UTF-8"?>
 
     <camelContext id="camelContext-fis-demo-cxfrs" xmlns="http://camel.apache.org/schema/spring">
         <route id="test-route">
-            <from uri="timer:foo?period=120s" />
+            <from uri="timer:springway?period=10s" />
             <log message="Camel Context running!. Application Version: 0.0.1" />
         </route>
     
