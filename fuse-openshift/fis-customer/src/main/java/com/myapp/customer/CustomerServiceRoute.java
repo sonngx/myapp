@@ -42,7 +42,7 @@ public class CustomerServiceRoute extends RouteBuilder {
         // you can configure the route rule with Java DSL here
 
         from(inputEndpoint)
-            .beanRef("customerBean")
+            .beanRef("customerBean", "sayHello")
             .to(resultEndpoint);
 
         /*restConfiguration()

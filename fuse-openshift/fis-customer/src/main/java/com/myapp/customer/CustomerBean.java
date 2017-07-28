@@ -24,7 +24,7 @@ public class CustomerBean {
 
     private int counter;
 
-    public String someMethod(String body) {
+    public String sayHello(String body) {
         return "Saying Hello World " + ++counter + " times";
     }
 
