@@ -45,6 +45,10 @@ public class CustomerServiceRoute extends RouteBuilder {
             .beanRef("customerBean", "sayHello")
             .to(resultEndpoint);
 
+        from("cxfrs:bean:customerRestService")
+            .beanRef("customerBean", "restResponse")
+            .to(resultEndpoint);
+
         /*restConfiguration()
             .contextPath("rest").apiContextPath("/api-doc")
             .host("0.0.0.0")
