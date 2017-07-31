@@ -25,13 +25,14 @@
       "name": "GIT_REPO",
       "displayName": "Git Repository URL",
       "required": true,
-      "value": "https://github.com/fabric8-quickstarts/spring-boot-camel-xml.git",
-      "description": "The URL of the repository with your application source code."
+      "value": "https://github.com/sonngx/myapp/tree/master/fuse-openshift",
+      "description": "The URL of the repository with your application source code.",
+      "contextDir": "fuse-openshift/spring-boot-camel-master"
     },
     {
       "name": "GIT_REF",
       "displayName": "Git Reference",
-      "value": "spring-boot-camel-xml-1.0.0.redhat-000055",
+      "value": "master",
       "description": "Set this to a branch name, tag or other ref of your repository if you are not using the default branch."
     },
     {
