@@ -149,6 +149,7 @@
           }
         ],
         "source": {
+          "contextDir": "fuse-openshift/spring-boot-camel-master",
           "type": "Git",
           "git": {
             "uri": "${GIT_REPO}",

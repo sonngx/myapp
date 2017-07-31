@@ -1,0 +1,13 @@
+kind: "Service"
+apiVersion: "v1"
+metadata:
+  name: "external-service"
+spec:
+  ports:
+    -
+      name: "test"
+      protocol: "TCP"
+      port: 9090 
+      targetPort: 80 
+      nodePort: 0
+selector: {}

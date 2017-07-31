@@ -1,0 +1,10 @@
+kind: "Endpoints"
+apiVersion: "v1"
+metadata:
+  name: "external-service" 
+subsets: 
+  - addresses:
+      - ip: "216.58.221.78" 
+    ports:
+      - port: 80 
+        name: "test"
