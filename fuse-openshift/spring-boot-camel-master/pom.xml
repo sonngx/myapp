@@ -38,6 +38,8 @@
     <fabric8.maven.plugin.version>3.5.17</fabric8.maven.plugin.version>
     <maven-compiler-plugin.version>3.6.0</maven-compiler-plugin.version>
     <maven-surefire-plugin.version>2.19.1</maven-surefire-plugin.version>
+
+    <fuse.version>6.3.0.redhat-187</fuse.version>
   </properties>
 
   <dependencyManagement>
@@ -46,6 +48,13 @@
         <groupId>io.fabric8</groupId>
         <artifactId>fabric8-project-bom-camel-spring-boot</artifactId>
         <version>${fabric8.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.jboss.fuse.bom</groupId>
+        <artifactId>jboss-fuse-parent</artifactId>
+        <version>${fuse.version}</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
