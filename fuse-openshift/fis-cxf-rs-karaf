@@ -13,7 +13,6 @@
         },
         "creationTimestamp": "2017-07-29T10:13:25Z",
         "name": "s2i-karaf2-cxf-rest",
-        "namespace": "openshift",
         "resourceVersion": "601",
         "selfLink": "/oapi/v1/namespaces/openshift/templates/s2i-karaf2-cxf-rest",
         "uid": "8efdc9da-7446-11e7-95dc-0800275de611"
@@ -56,7 +55,7 @@
                 "name": "${SERVICE_NAME}"
             },
             "spec": {
-                "clusterIP": "None",
+                //"clusterIP": "None",
                 "deprecatedPublicIPs": [],
                 "ports": [
                     {
@@ -118,6 +117,7 @@
                 },
                 "resources": {},
                 "source": {
+                    "contextDir": "fuse-openshift/karaf2-cxf-rest-master",
                     "git": {
                         "ref": "${GIT_REF}",
                         "uri": "${GIT_REPO}"
@@ -310,13 +310,13 @@
             "displayName": "Git Repository URL",
             "name": "GIT_REPO",
             "required": true,
-            "value": "https://github.com/fabric8-quickstarts/karaf2-cxf-rest.git"
+            "value": "https://github.com/sonngx/myapp.git"
         },
         {
             "description": "Set this to a branch name, tag or other ref of your repository if you are not using the default branch.",
             "displayName": "Git Reference",
             "name": "GIT_REF",
-            "value": "karaf2-cxf-rest-1.0.0.redhat-000010"
+            "value": "master"
         },
         {
             "description": "Exposed Service name.",
