@@ -25,7 +25,7 @@ public class HelloServiceImpl implements HelloService {
     }
 
     public String sayHello(String a) {
-        return "Hello " + a + ", Welcome to CXF RS Spring Boot World!!!";
+        return "Hello " + a + ", Welcome to CXF RS Spring Boot release Version 01";
     }
     
 }
