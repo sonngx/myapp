@@ -25,7 +25,7 @@ public class HelloServiceImpl implements HelloService {
     }
 
     public String sayHello(String a) {
-        return "Hello " + a + ", Welcome to CXF RS Spring Boot World!!!";
+        return "Hello " + a + ", this is a REST response from API version 2";
     }
     
 }
