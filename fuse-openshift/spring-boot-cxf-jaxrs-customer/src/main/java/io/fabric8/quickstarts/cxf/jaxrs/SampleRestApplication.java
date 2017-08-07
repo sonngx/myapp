@@ -57,6 +57,7 @@ public class SampleRestApplication {
       public void configure() throws Exception {
         from("timer://foo?period=5000")
             .setBody().constant("Hello World")
+            .setHeader("CamelHttpMethod", constant("GET"))
             .recipientList(simple("{{HOST_NAME}}"))
             .log(">>> ${body}");
       }
