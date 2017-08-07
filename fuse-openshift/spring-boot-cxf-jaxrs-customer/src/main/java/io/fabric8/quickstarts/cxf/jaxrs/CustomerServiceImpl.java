@@ -25,7 +25,7 @@ public class CustomerServiceImpl implements CustomerService {
     }
 
     public String info(String a) {
-        return "Hello " + a + ", This is customter service version 2";
+        return "Hello " + a + ", This is customter service version 1";
     }
     
 }
