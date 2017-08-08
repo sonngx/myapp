@@ -25,7 +25,7 @@ public class AccountServiceImpl implements AccountService {
     }
 
     public String info(String a) {
-        return "Hello " + a + ", This is account service version 1";
+        return "Hello " + a + ", This is account service version 1.1";
     }
     
 }
